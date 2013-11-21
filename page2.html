@@ -1,0 +1,364 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Twitter Bootstrap</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<link rel="shortcut icon" href="assets/favicon.ico" >
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/animation.js" type="text/javascript"></script>
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
+		</div>
+		<div class="navbar-collapse collapse">
+		  <ul class="nav navbar-nav">
+			<li><a href="index.html">Home</a></li>
+			<li class="active"><a href="page2.html">Page 2</a></li>
+			<li class="dropdown">
+			  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+			  <ul class="dropdown-menu">
+				<li><a href="#">SubPage 1</a></li>
+				<li><a href="#">SubPage 2</a></li>
+				<li><a href="#">SubPage 3</a></li>
+				<li><a href="#">SubPage 4</a></li>
+			  </ul>
+			</li>
+		  </ul>
+		  <form class="navbar-form navbar-right" role="search">
+			<div class="form-group">
+			<input type="text" class="form-control" placeholder="Search">
+			</div>
+			<button type="submit" class="btn btn-primary tooltip-hover" data-toggle="tooltip" title="I am Tooltip!!!   On Click of this 'Submit button' add functionality for Search" data-placement='bottom'>Submit</button>
+		</form>
+		</div>
+	</nav>
+	<div class="row page2-body">
+		<div class="items-align col-md-12">
+			<h1>Components of Bootstrap</h1>
+			<div class="divider"></div>
+			<div class="col-btns">
+				<div class="btn-group">
+				  <button type="button" class="btn btn-danger btn-lg dropdown-toggle" data-toggle="dropdown">Components
+					<span class="caret"></span>
+				  </button>
+				  <ul class="dropdown-menu" role="menu">
+					<li id="glyph-images"><a href="#">Glyph Images</a></li>
+					<li id="badge-component"><a href="#">Badges</a></li>
+					<li id="button-styles"><a href="#">Buttons</a></li>
+					<li id="button-component"><a href="#">Button Dropdown</a></li>
+					<li id="input-groups"><a href="#">Input Groups</a></li>
+					<li id="alert-boxes"><a href="#">Alert Boxes</a></li>
+					<li id="progress-bars"><a href="#">Progress Bars</a></li>
+				  </ul>
+				</div>
+			</div>
+			<div class="glyph-images">
+				<div class="glyphicons-col">
+					<span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;
+					<span class="glyphicon glyphicon-envelope"></span>&nbsp;&nbsp;
+					<span class="glyphicon glyphicon-search"></span>&nbsp;&nbsp;
+					<span class="glyphicon glyphicon-phone"></span>&nbsp;&nbsp;
+					<span class="glyphicon glyphicon-cutlery"></span>&nbsp;&nbsp;
+					<span class="glyphicon glyphicon-align-center"></span>&nbsp;&nbsp;
+					<span class="glyphicon glyphicon-thumbs-up"></span>&nbsp;&nbsp;
+					<span class="glyphicon glyphicon-transfer"></span>
+				</div>
+				<div class="popover bottom">
+					<div class="arrow"></div>
+					<h3 class="popover-title">We are Glyph Images</h3>
+					<div class="popover-content">
+					  <p>There are 200 glyph images. To check out all the images go to <a href="http://getbootstrap.com/components/#glyphicons" target="blank">Bootstrap Glyph Images</a>.</p>
+					</div>
+				</div>
+			</div>
+			<div class="badge-component" style="display:none">
+				<ul class="list-group">
+				  <li class="list-group-item">
+					<span class="badge">3</span>
+					Item 1
+				  </li>
+				  <li class="list-group-item">
+					<span class="badge">10</span>
+					Item 2
+				  </li>
+				  <li class="list-group-item">
+					<span class="badge">7</span>
+					Item 3
+				  </li>
+				  <li class="list-group-item">
+					<span class="badge">22</span>
+					Item 4
+				  </li>
+				</ul>
+				<div class="popover bottom">
+					<div class="arrow"></div>
+					<h3 class="popover-title">I am Badge Component</h3>
+					<div class="popover-content">
+					  <p>I can be used to show unread items. Here static numbers are used for demo purpose.</p>
+					</div>
+				</div>
+			</div>
+			<div class="button-styles" style="display:none">
+				<button type="button" class="btn btn-lg btn-default">Default Button</button>
+				<button type="button" class="btn btn-lg btn-primary">Primary Button</button>
+				<button type="button" class="btn btn-lg btn-success">Success Button</button>
+				<button type="button" class="btn btn-lg btn-info">Info Button</button>
+				<button type="button" class="btn btn-lg btn-danger">Danger Button</button>
+				<div class="popover bottom">
+					<div class="arrow"></div>
+					<h3 class="popover-title">Buttons</h3>
+					<div class="popover-content">
+					  <p>These are different types of buttons. Button styles can be modified by adding different classes such as "btn-default", "btn-primary", "btn-success", "btn-info" and "btn-danger".</p>
+					</div>
+				</div>
+			</div>
+			<div class="button-component" style="display:none;">
+				<div class="btn-group">
+				  <button type="button" class="btn btn-lg btn-danger dropdown-toggle" data-toggle="dropdown">
+					Button 1 <span class="caret"></span>
+				  </button>
+				  <ul class="dropdown-menu" role="menu">
+					<li><a href="#">Dropdown Item 1</a></li>
+					<li><a href="#">Dropdown Item 2</a></li>
+					<li><a href="#">Dropdown Item 3</a></li>
+				  </ul>
+				</div>
+				<div class="btn-group">
+				  <button type="button" class="btn btn-lg btn-primary">Button 2</button>
+				  <button type="button" class="btn btn-lg btn-primary dropdown-toggle" data-toggle="dropdown">
+					<span class="caret"></span>
+					<span class="sr-only">Toggle Dropdown</span>
+				  </button>
+				  <ul class="dropdown-menu" role="menu">
+					<li><a href="#">Dropdown Item 1</a></li>
+					<li><a href="#">Dropdown Item 2</a></li>
+					<li><a href="#">Dropdown Item 3</a></li>
+				  </ul>
+				</div>
+				<div class="btn-group dropup">
+				  <button type="button" class="btn btn-lg btn-warning">Button 3</button>
+				  <button type="button" class="btn btn-lg btn-warning dropdown-toggle" data-toggle="dropdown">
+					<span class="caret"></span>
+					<span class="sr-only">Toggle Dropdown</span>
+				  </button>
+				  <ul class="dropdown-menu">
+					<li><a href="#">Dropdown Item 1</a></li>
+					<li><a href="#">Dropdown Item 2</a></li>
+					<li><a href="#">Dropdown Item 3</a></li>
+				  </ul>
+				</div>
+				<div class="btn-group right dropup">
+				  <button type="button" class="btn btn-lg btn-success">Button 4</button>
+				  <button type="button" class="btn btn-lg btn-success dropdown-toggle" data-toggle="dropdown">
+					<span class="caret"></span>
+					<span class="sr-only">Toggle Dropdown</span>
+				  </button>
+				  <ul class="dropdown-menu pull-right">
+					<li><a href="#">Dropdown Item 1</a></li>
+					<li><a href="#">Dropdown Item 2</a></li>
+					<li><a href="#">Dropdown Item 3</a></li>
+				  </ul>
+				</div>
+				<div class="popover bottom">
+					<div class="arrow"></div>
+					<h3 class="popover-title">Buttons with dropdowns</h3>
+					<div class="popover-content">
+					  <p>These are buttons with different styles of dropdowns. Styles for dropdown menu should be added using extra styles.</p>
+					</div>
+				</div>
+			</div>
+			<div class="input-groups" style="display:none;">
+				<div class="input-group">
+				  <span class="input-group-addon">@</span>
+				  <input type="text" class="form-control" placeholder="Email">
+				</div><br/>
+				<div class="input-group">
+				  <input type="text" class="form-control" placeholder="Value">
+				  <span class="input-group-addon">.00</span>
+				</div><br/>
+				<div class="input-group">
+				  <span class="input-group-addon">$</span>
+				  <input type="text" class="form-control" placeholder="Name and Value">
+				  <span class="input-group-addon">.00</span>
+				</div>
+				<div class="popover bottom">
+					<div class="arrow"></div>
+					<h3 class="popover-title">I am Input Group Component</h3>
+					<div class="popover-content">
+					  <p>These are form controls with prepend and append texts.</p>
+					</div>
+				</div>
+			</div>
+			<div class="progress-bars" style="display:none;">
+				<div class="progress">
+				  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+					<span class="sr-only">40% Complete (success)</span>
+				  </div>
+				</div>
+				<div class="progress progress-striped">
+				  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+					<span class="sr-only">20% Complete</span>
+				  </div>
+				</div>
+				<div class="progress progress-striped active">
+				  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+					<span class="sr-only">60% Complete (warning)</span>
+				  </div>
+				</div>
+				<div class="progress">
+				  <div class="progress-bar progress-bar-success" style="width: 35%">
+					<span class="sr-only">35% Complete (success)</span>
+				  </div>
+				  <div class="progress-bar progress-bar-warning" style="width: 20%">
+					<span class="sr-only">20% Complete (warning)</span>
+				  </div>
+				  <div class="progress-bar progress-bar-danger" style="width: 10%">
+					<span class="sr-only">10% Complete (danger)</span>
+				  </div>
+				</div>
+				<div class="popover bottom">
+					<div class="arrow"></div>
+					<h3 class="popover-title">I am Progress bar</h3>
+					<div class="popover-content">
+					  <p>These are different styles of progress bars. Here values are static for demo purpose.</p>
+					</div>
+				</div>
+			</div>
+			<div class="alert-boxes" style="display:none" >
+				<div class="alert alert-warning alert-dismissable">
+				  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+				  <strong>Warning!</strong> This is warning alert!!! Can close me clicking close icon at the end.
+				</div>
+				<div class="alert alert-info alert-dismissable">
+				  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+				  <strong>Info!</strong> This is info alert!!! Can close me clicking close icon at the end
+				</div>
+				<div class="alert alert-success alert-dismissable">
+				  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+				  <strong>Success!</strong> This is success alert!!! Can close me clicking close icon at the end
+				</div>
+				<div class="alert alert-danger alert-dismissable">
+				  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+				  <strong>Danger!</strong> This is danger alert!!! Can close me clicking close icon at the end
+				</div>
+				<div class="popover bottom">
+					<div class="arrow"></div>
+					<h3 class="popover-title">We are Alert boxes</h3>
+					<div class="popover-content">
+					  <p>Alert boxes can also be created without close icon. </p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="divider"></div>
+		<div class="col-md-12">
+			<div class="col-btns">
+				<div class="btn-group">
+				  <button type="button" class="btn btn-primary btn-lg">Change my Style</button>
+				  <button type="button" class="btn btn-primary btn-lg dropdown-toggle" data-toggle="dropdown">
+					<span class="caret"></span>
+					<span class="sr-only">Toggle Dropdown</span>
+				  </button>
+				  <ul class="dropdown-menu navbar-style" role="menu">
+					<li><a href="javascript:void(0)">Tabs Style</a></li>
+					<li><a href="javascript:void(0)">Pills Style</a></li>
+					<li><a href="javascript:void(0)">Collapse Style</a></li>
+				  </ul>
+				</div>
+			</div>
+			<div>
+				<div class="tab-align">
+					<ul class="nav nav-tabs">
+					  <li class="active"><a href="#tab1" data-toggle="tab">Tab 1</a></li>
+					  <li><a href="#tab2" data-toggle="tab">Tab 2</a></li>
+					  <li><a href="#tab3" data-toggle="tab">Tab 3</a></li>
+					</ul>
+					<div class="tab-content">
+					  <div class="tab-pane fade in active" id="tab1">
+					  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer fringilla eleifend faucibus. Aliquam mattis ornare risus tempor pharetra. Nullam eu vulputate metus, et dignissim nibh. Curabitur mattis ipsum varius semper blandit. Nunc mattis posuere mi non aliquam. Duis tempor, diam tristique posuere viverra, elit nisl hendrerit nisi, in ullamcorper libero sapien ut nisi. Morbi molestie ac dui ac faucibus.</p>
+					  <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc est tellus, fermentum ac porttitor eget, condimentum sit amet ipsum. Mauris fringilla sem sit amet purus scelerisque, vitae facilisis est malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur volutpat dapibus nibh, sit amet facilisis justo tincidunt id. Duis vulputate libero vehicula semper sollicitudin. Praesent id gravida lorem. purus scelerisque, vitae facilisis est malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur volutpat dapibus nibh, sit amet facilisis justo tincidunt id. Duis vulputate libero vehicula semper sollicitudin. Praesent id gravida lorem.</p>
+					  </div>
+					  <div class="tab-pane fade" id="tab2">
+					  <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc est tellus, fermentum ac porttitor eget, condimentum sit amet ipsum. Mauris fringilla sem sit amet purus scelerisque, vitae facilisis est malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur volutpat dapibus nibh, sit amet facilisis justo tincidunt id. Duis vulputate libero vehicula semper sollicitudin. Praesent id gravida lorem.</p><br/>
+					  <p>Integer vulputate est tellus, et semper sapien viverra et. Cras dictum ligula quis lectus porttitor, et tempor tortor imperdiet. Quisque adipiscing rhoncus lacus sed adipiscing. Nam quis sodales mi. Integer eget tortor commodo, porttitor justo id, dictum velit. Aliquam ullamcorper dolor nec mauris fringilla mattis. Sed ac suscipit erat.</p><br/>
+					  <p> Nam quis sodales mi. Integer eget tortor commodo, porttitor justo id, dictum velit. Aliquam ullamcorper dolor nec mauris fringilla mattis. Sed ac suscipit erat.</p>
+					  </div>
+					  <div class="tab-pane fade" id="tab3">
+					  <p>Donec auctor justo velit, non dictum est scelerisque scelerisque. Integer rhoncus magna eros, quis gravida tellus dictum eget. Vestibulum suscipit gravida suscipit. Sed id neque nec lectus euismod blandit. Maecenas ultricies purus ut nisi rhoncus bibendum. Nulla fringilla erat eu augue bibendum, eu lobortis arcu eleifend. Etiam dapibus consequat neque, non ultrices diam. Donec id purus fermentum urna suscipit sollicitudin non non erat. Phasellus aliquet, ante nec gravida lobortis, nunc orci mollis ipsum, eu feugiat quam ipsum at arcu. Pellentesque ut lacinia justo, id accumsan mi. Nunc velit ligula, vehicula eget tincidunt sed, pellentesque nec ante. Praesent fringilla aliquam dui eu faucibus. Duis vel scelerisque urna.</p><br/>
+					  <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc est tellus, fermentum ac porttitor eget, condimentum sit amet ipsum. Mauris fringilla sem sit amet purus scelerisque, vitae facilisis est malesuada. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur volutpat dapibus nibh, sit amet facilisis justo tincidunt id. Duis vulputate libero vehicula semper sollicitudin. Praesent id gravida lorem.</p>
+					  </div>
+					</div>
+				</div>
+				<div class="panel-group collapse-tabs" style="display:none" id="accordion">
+				  <div class="panel panel-default">
+					<div class="panel-heading">
+					  <h4 class="panel-title">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+						  Horizontal Tab 1 (Click on this link)
+						</a>
+					  </h4>
+					</div>
+					<div id="collapseOne" class="panel-collapse collapse in">
+					  <div class="panel-body">
+						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					  </div>
+					</div>
+				  </div>
+				  <div class="panel panel-default">
+					<div class="panel-heading">
+					  <h4 class="panel-title">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+						  Horizontal Tab 2 (Click on this link)
+						</a>
+					  </h4>
+					</div>
+					<div id="collapseTwo" class="panel-collapse collapse">
+					  <div class="panel-body">
+						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					  </div>
+					</div>
+				  </div>
+				  <div class="panel panel-default">
+					<div class="panel-heading">
+					  <h4 class="panel-title">
+						<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+						  Horizontal Tab 3 (Click on this link)
+						</a>
+					  </h4>
+					</div>
+					<div id="collapseThree" class="panel-collapse collapse">
+					  <div class="panel-body">
+						Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+					  </div>
+					</div>
+				  </div>
+				</div>
+			</div>
+		</div>		
+		
+	</div>
+	  <!-- FOOTER -->
+	  <footer>
+		<p class="pull-right"><a href="#">Back to top</a></p>
+		<p>&copy; 2013 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+	  </footer>
+  </body>
+</html>

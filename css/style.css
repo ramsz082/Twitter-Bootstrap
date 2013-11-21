@@ -1,0 +1,172 @@
+article, aside, audio, canvas, command, datalist, details, embed, figcaption, figure, footer, header, hgroup, keygen, meter, nav, output, progress, section, source, video, p, div, body, h1, h2, h3, h4, h5, h6, ul, li, a , button{
+	font-family:contentFont;
+}
+body
+{
+background:#E9E0E0;
+}
+@font-face
+{
+font-family: contentFont;
+src: url('../fonts/AvenirLTStd-Book.otf'); /* IE9 */
+}
+.navbar
+{
+font-weight:bold;
+}
+.tab-align
+{
+border-radius:4px;
+padding:5px;
+font-size:18px;
+max-height:450px;
+background-color:#998D83;
+color:#fff;
+max-width:900px;
+margin:0 auto;
+overflow:auto;
+}
+.tab-align li a
+{
+font-weight:bold;
+color:#fff;
+}
+.btn-align
+{
+max-width:210px;
+margin:0 auto;
+padding:20px;
+}
+.btn-align a
+{
+font-size:22px;
+font-weight:bold;
+}
+.items-align .col-btns
+{
+max-width:154px;	
+}
+.items-align .popover
+{
+position: relative;
+display: block;
+max-width: 260px;
+margin: 20px auto;
+}
+.divider
+{
+content:""; 
+height:1px;
+background:-moz-linear-gradient(left, #E9E0E0 0%,#000000 50%,#E9E0E0 100%); 
+background:-webkit-linear-gradient(left, #E9E0E0 0%,#000000 50%,#E9E0E0 100%); 
+background:linear-gradient(left, #E9E0E0 0%,#000000 50%,#E9E0E0 100%);
+width:100%;
+display:block;
+}
+.col-btns
+{
+max-width:205px;
+margin:30px auto;
+}
+.items-align ul
+{
+max-width:430px;
+margin:0 auto;
+}
+.tooltip-inner
+{
+font-size:16px;
+font-weight:normal;
+background-color:#AA9C90;
+}
+.tooltip-arrow
+{
+border-bottom-color:#AA9C90 !important;
+}
+.popover-title
+{
+font-size:18px;
+}
+.popover
+{
+font-size:17px;	
+text-align:center;
+}
+.alert-box
+{
+max-width:600px;
+margin:0 auto;
+}
+.alert-danger
+{
+background-color:#E62929;
+color:#fff;
+}
+.jumbotron
+{
+max-width:1100px;
+margin:20px auto;
+padding:30px 40px;
+background-color:#60B459;
+text-align:center;
+}
+.jumbotron p
+{
+font-family:Segoe Print;
+}
+.jumbotron h1, .jumbotron p
+{
+color:#fff;
+}
+.page2-body
+{
+padding:0 15px;
+margin:0px;
+}
+footer
+{
+background-color:#333;
+color:#fff;
+padding:20px;margin-top:15px;
+}
+.button-component, .progress-bars
+{
+max-width:546px;
+margin:0 auto;
+}
+.button-styles button
+{
+margin:3px;
+}
+.button-styles
+{
+max-width:785px;
+margin:0 auto;
+}
+.input-groups
+{
+max-width:300px;
+margin:0 auto;
+}
+.dropdown-menu
+{
+z-index:1020;
+}
+.glyph-images, .alert-boxes
+{
+margin:0 auto;
+max-width:560px;
+}
+.glyph-images .glyphicons-col
+{
+background: #2380BE;
+color: #fff;
+font-size: 38px;
+border-radius: 5px;
+padding:10px;
+}
+.tab-align, .collapse-tabs
+{
+max-width:900px;
+margin:0 auto;
+}

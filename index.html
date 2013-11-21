@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/favicon.png">
+    <title>Twitter Bootstrap</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">	
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/animation.js" type="text/javascript"></script>
+  </head>
+<!-- NAVBAR
+================================================== -->
+  <body>
+	<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
+		</div>
+		<div class="navbar-collapse collapse">
+		  <ul class="nav navbar-nav">
+			<li class="active"><a href="index.html">Home</a></li>
+			<li><a href="page2.html">Page 2</a></li>
+			<li class="dropdown">
+			  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+			  <ul class="dropdown-menu">
+				<li><a href="#">SubPage 1</a></li>
+				<li><a href="#">SubPage 2</a></li>
+				<li><a href="#">SubPage 3</a></li>
+				<li><a href="#">SubPage 4</a></li>
+			  </ul>
+			</li>
+		  </ul>
+		  <form class="navbar-form navbar-right" role="search">
+			<div class="form-group">
+			<input type="text" class="form-control" placeholder="Search">
+			</div>
+			<button type="submit" class="btn btn-primary tooltip-hover" data-toggle="tooltip" title="I am Tooltip!!!   On Click of this 'Submit button' add functionality for Search" data-placement='bottom'>Submit</button>
+		</form>
+		</div>
+	</nav>
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+		<li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="assets/first-slide.jpg" alt="First slide">
+        </div>
+        <div class="item">
+          <img src="assets/second-slide.jpg" alt="Second slide">
+        </div>
+        <div class="item">
+          <img src="assets/third-slide.jpg" alt="Third slide">
+        </div>
+		<div class="item">
+          <img src="assets/fourth-slide.jpg" alt="Fourth slide">
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    </div><!-- /.carousel -->
+	<div class="container">
+		<div class="jumbotron">
+		  <h1>Welcome</h1>
+		  <p>This is an simple website using Bootstrap. "Click and Hover" on all the "links and buttons" across all the pages to know the added functionalities. Add or remove the functionalities as per your requirement.</p>
+		<div class="btn-align"><a class="btn btn-danger btn-lg" id="click-me-btn" data-toggle="modal" data-target="#myModal" href="#">First Click Me</a>
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+			<div class="modal-content">
+			  <div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title" id="myModalLabel">Thank You!!! I am Modal Popup</h4>
+			  </div>
+			  <div class="modal-body">
+				 Here you can add any controls or static contents. On click of "save changes" button save the changes using any specific functionality code.
+			  </div>
+			  <div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Save changes</button>
+			  </div>		
+			</div><!-- /.modal-content -->
+		  </div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+		</div>
+		<div class="btn-align"><a class="btn btn-warning btn-lg" id="alert-me-btn" role="button" data-toggle="popover" data-content="Click below button again to Close me!!!" role="button" data-original-title="I am Popover" data-placement="top" disabled>Am Disabled</a></div>
+		<!--<div class="alert-box" style="display:none">
+			<div class="alert alert-danger">
+			  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+			  <span class="glyphicon glyphicon-warning-sign"></span>&nbsp;&nbsp;<strong>I am Alert Box</strong> <br/>You can close me by clicking close button at the end&nbsp;&nbsp;<span class="glyphicon glyphicon-arrow-right"></span>
+			</div>
+		</div>-->
+		</div>
+	  </div>
+	  <!-- FOOTER -->
+	  <footer>
+		<p class="pull-right"><a href="#">Back to top</a></p>
+		<p>&copy; 2013 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+	  </footer>
+  </body>
+</html>
